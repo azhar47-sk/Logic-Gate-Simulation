@@ -28,11 +28,13 @@ body{
 .home-btn > a {
     text-decoration: none;
     font-size: larger;
+    color: black;
     
 }
 .logic-area{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .logic-diagram{
@@ -46,16 +48,9 @@ body{
     width: 25%;
     background-color: #fff;
 }
-/* Logic Area 2 */
-
-.logic-area-2{
-    height: 42vh;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
 .logic-description{
+    position: relative;
+    margin: 33px 0px;
     height: 35vh;
     width: 90%;
     background-color: #fff;
@@ -183,6 +178,127 @@ label{
     display: none;
 }
 
-.rowColor{
-    color: red;
+@media (min-width:300px){
+    #prevBtn{
+        width: 25vmin;
+    }
+
+    .home-btn {
+        height: 6vh;
+        width: 20vmin;
+        margin-left: 5%;
+        border-radius: 10px;
+        background-color: skyblue;
+    }
+
+    .logic-diagram{
+        height: 50vh;
+        width: 90%;
+        background-color: #fff;
+        border: 1px solid black;
+    }
+    
+    .logic-table{
+        margin: 33px 0px;
+        height: 35vh;
+        width: 90%;
+        background-color: #fff;
+    }
+    .logic-description{
+        position: relative;
+        margin: 0px 0px 20px 0px ;
+        height: 35vh;
+        width: 90%;
+        background-color: #fff;
+    }
+}
+
+@media (min-width:600px){
+    .home-btn {
+        height: 6vh;
+        width: 15vmin;
+        margin-left: 5%;
+        border-radius: 10px;
+        background-color: skyblue;
+    }
+
+    .logic-diagram{
+        height: 50vh;
+        width: 90%;
+        background-color: #fff;
+    }
+    
+    .logic-table{
+        margin: 33px 0px;
+        height: 35vh;
+        width: 90%;
+        background-color: #fff;
+    }
+    .logic-description{
+        position: relative;
+        margin-bottom: 0px;
+        height: 35vh;
+        width: 90%;
+        background-color: #fff;
+    }
+}
+
+@media (min-width:900px){
+    .home-btn {
+        height: 6vh;
+        width: 10vmin;
+        margin-left: 5%;
+        border-radius: 10px;
+        background-color: skyblue;
+    }
+
+    .logic-diagram{
+        height: 50vh;
+        width: 90%;
+        background-color: #fff;
+    }
+    
+    .logic-table{
+        margin: 33px 0px;
+        height: 35vh;
+        width: 25%;
+        background-color: #fff;
+    }
+    .logic-description{
+        position: relative;
+        margin: 33px 0px;
+        height: 35vh;
+        width: 60%;
+        background-color: #fff;
+    }
+}
+
+@media (min-width:1200px){
+    .home-btn {
+        height: 6vh;
+        width: 10vmin;
+        margin-left: 5%;
+        border-radius: 10px;
+        background-color: skyblue;
+    }
+
+    .logic-diagram{
+        height: 50vh;
+        width: 60%;
+        background-color: #fff;
+    }
+    
+    .logic-table{
+        margin: 0;
+        height: 50vh;
+        width: 25%;
+        background-color: #fff;
+    }
+    .logic-description{
+        position: relative;
+        margin: 33px 0px;
+        height: 35vh;
+        width: 90%;
+        background-color: #fff;
+    }
 }

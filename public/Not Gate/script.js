@@ -13,16 +13,16 @@ function resizeCanvas() {
     const ctx = canvas.getContext('2d');
     // Add your drawing or animation logic here
     if (window.matchMedia('(max-width: 1400px)').matches) {
-          canvas.width = 700;
-          canvas.height = 500;
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
 
-          drawtriangle(ctx1, 550,250,400,400,'orange','orange',6);
-          drawLine(ctx1,300,430,250,40,'orange','white',6);
-          drawLine(ctx1,915,430,250,40,'orange','orange',6);
-          drawSquare(ctx1,200,400,100,100,'orange','white',6);
-          drawSquare(ctx1,1150,400,100,100,'orange',"orange",6);
-          addText(ctx1,'NOT',625,480,'white','80px',6);
-          addText(ctx1,'1',1180,480,'white','80px',6)
+          drawtriangle(ctx1, 550,125,300,300,'orange','orange',4);
+          drawLine(ctx1,125,210,125,30,'orange','white',4);
+          drawLine(ctx1,420,210,125,30,'orange','orange',4);
+          drawSquare(ctx1,70,195,60,60,'orange','white',4);
+          drawSquare(ctx1,545,195,60,60,'orange',"orange",4);
+          addText(ctx1,'NOT',275,240,'white','40px',6);
+          addText(ctx1,'1',565,240,'white','40px',4)
           ctx1.clearRect(295,433,33,35);
 
           drawtriangle(ctx2, 700,125,700,700,'white', 'orange',10);
@@ -39,7 +39,7 @@ function resizeCanvas() {
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
 
-      drawtriangle(ctx1, 0,0,200,200,'orange','orange',6);
+      drawtriangle(ctx1, 550,250,400,400,'orange','orange',6);
       drawLine(ctx1,300,430,250,40,'orange','white',6);
       drawLine(ctx1,915,430,250,40,'orange','orange',6);
       drawSquare(ctx1,200,400,100,100,'orange','white',6);
