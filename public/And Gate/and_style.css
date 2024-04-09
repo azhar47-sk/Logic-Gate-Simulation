@@ -192,10 +192,11 @@ label{
     }
 
     .logic-diagram{
-        height: 70vh;
+        height: 90%;
         width: 90%;
         background-color: #fff;
         border: 1px solid black;
+        justify-content:start;
     }
     
     .logic-table{
