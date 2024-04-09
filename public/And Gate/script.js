@@ -298,6 +298,33 @@ function resizeCanvas() {
       drawSquare(ctx4,80,220,40,40,'orange','orange',4);
       drawSquare(ctx4,660,165,40,40,'orange','orange',4);
     }
+    else if(window.matchMedia('(min-width: 300px)').matches){
+      canvas.width = 300;
+      canvas.height = 600;
+
+      // for A=0  and B=0    CTX=1
+      drawDownSemiCircle(ctx1,150,320, 100,'orange','white',4);
+      drawRectangle(ctx1,50,180,200,150);
+      ctx1.clearRect(52,325,196,10);
+      drawLine(ctx1,90,80,20,100);
+      drawLine(ctx1,195,80,20,100);
+      drawLine(ctx1,50,80,55,20);
+      drawLine(ctx1,195,80,55,20);
+      drawSquare(ctx1,2,66,50,50);
+      drawSquare(ctx1,248,66,50,50);
+      drawLine(ctx1,140,420,20,100);
+      drawSquare(ctx1,125,520,50,50);
+      ctx1.clearRect(92,82,16,100);
+      ctx1.clearRect(197,82,16,100);
+      ctx1.clearRect(142,415,16,130);
+
+      ctx1.clearRect(50,82,20,16);
+      ctx1.clearRect(245,82,10,16);
+
+      // ctx1.clearRect(92,174,11,20);
+      // ctx1.clearRect(197,174,11,20);
+    }
+
     }
   }
   
@@ -346,4 +373,14 @@ function drawSquare(ctx,x,y,w,h,stroke,color, lineWidth){
     ctx.strokeStyle = stroke;
     ctx.fillRect(x,y,w,h);
     ctx.strokeRect(x,y,w,h);
+}
+
+function drawDownSemiCircle(ctx, x, y, radius, stroke, color, lineWidth){
+  ctx.lineWidth = lineWidth;
+  ctx.fillStyle = color;
+  ctx.strokeStyle = stroke;
+  ctx.beginPath();
+  ctx.arc(x,y,radius,0*Math.PI,1*Math.PI);
+  ctx.fill();
+  ctx.stroke();
 }
