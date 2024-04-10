@@ -208,16 +208,16 @@ label{
         height: 400px;
     }
     #myCanvas2{
-        width: 250px;
-        height: 500px;
+        width: 200px;
+        height: 400px;
     }
     #myCanvas3{
-        width: 250px;
-        height: 500px;
+        width: 200px;
+        height: 400px;
     }
     #myCanvas4{
-        width: 250px;
-        height: 500px;
+        width: 200px;
+        height: 400px;
     }
     .div_a {
         position: relative;
@@ -274,42 +274,42 @@ label{
         background-color: #fff;
      }
     #myCanvas1{
-        width: 800px;
-        height: 400px;
+        width: 600px;
+        height: 300px;
     }
     #myCanvas2{
-        width: 800px;
-        height: 400px;
+        width: 600px;
+        height: 300px;
     }
     #myCanvas3{
-        width: 800px;
-        height: 400px;
+        width: 600px;
+        height: 300px;
     }
     #myCanvas4{
-        width: 800px;
-        height: 400px;
+        width: 600px;
+        height: 300px;
     }
     .div_a {
         position: relative;
-        font-size: x-large;
-        margin-top: -130px;
-        left: 86px;
+        font-size: large;
+        margin-top: -90px;
+        left: 94px;
         z-index: 1;
     }
     
     .div_b {
         position: relative;
-        font-size: x-large;
-        margin-top: 80px;
-        left: 70px;
+        font-size: large;
+        margin-top: 60px;
+        left: 80px;
         z-index: 1;
     }
     
     .div_y{
         position: relative;
-        font-size: x-large;
-        margin-top: -30px;
-        right: 80px;
+        font-size: large;
+        margin-top: -22px;
+        right: 96px;
         z-index: 1;
     }
     
@@ -359,6 +359,29 @@ label{
         width: 800px;
         height: 400px;
     }
+    .div_a {
+        position: relative;
+        font-size: x-large;
+        margin-top: -120px;
+        left: 125px;
+        z-index: 1;
+    }
+    
+    .div_b {
+        position: relative;
+        font-size: x-large;
+        margin-top: 80px;
+        left: 108px;
+        z-index: 1;
+    }
+    
+    .div_y{
+        position: relative;
+        font-size: x-large;
+        margin-top: -33px;
+        right: 129px;
+        z-index: 1;
+    }
 }
 
 @media (min-width:1200px){
@@ -390,4 +413,3 @@ label{
         background-color: #fff;
     }
 }
-

@@ -106,134 +106,7 @@ function resizeCanvas() {
       const ctx = canvas.getContext('2d');
       // Add your drawing or animation logic here
    
-      if(window.matchMedia('(min-width: 1600px)').matches){
-    // for A=0  and B=0    CTX=1
-      drawCircle(ctx1,1100,450,300,'orange', 'white',10)
-      drawRectangle(ctx1,500,150,600,600,'orange', 'white',10)
-      drawLine(ctx1,200,300,300,40,'orange',10);
-      drawLine(ctx1,200,550,300,40,'orange',10);
-      drawLine(ctx1,1400,420,300,40,'orange',10);
-      ctx1.clearRect(1090,155,15,590,10);
-      ctx1.clearRect(495,305,20,30,10);
-      ctx1.clearRect(495,555,20,30,10);
-      ctx1.clearRect(1395,425,20,30,10);
-      drawSquare(ctx1,100,270,100,100,10);
-      drawSquare(ctx1,100,520,100,100,10);
-      drawSquare(ctx1,1700,390,100,100,10);
-      ctx1.clearRect(195,305,20,30,10);
-      ctx1.clearRect(195,555,20,30,10);
-      ctx1.clearRect(1695,425,20,30,10);
-
-      // for A=0  and B=1    CTX=2
-      drawCircle(ctx2,1100,450,300,'orange', 'white',10)
-      drawRectangle(ctx2,500,150,600,600,'orange', 'white',10)
-      drawLine(ctx2,200,300,300,40,'orange',10);
-      drawLine(ctx2,200,550,300,40,'orange','orange',10);
-      drawLine(ctx2,1400,420,300,40,'orange','white',10);
-      ctx2.clearRect(1090,155,15,590,10);
-      ctx2.clearRect(495,305,20,30,10);
-      // ctx2.clearRect(495,555,20,30);
-      ctx2.clearRect(1395,425,20,30,10);
-      drawSquare(ctx2,100,270,100,100,'orange','white',10);
-      drawSquare(ctx2,100,520,100,100,'orange','orange',10);
-      drawSquare(ctx2,1700,390,100,100,'orange','white',10);
-      ctx2.clearRect(195,305,20,30,10);
-      // ctx2.clearRect(195,555,20,30)
-      ctx2.clearRect(1695,425,20,30,10);
-
-      // for A=1  and B=0    CTX=3
-      drawCircle(ctx3,1100,450,300,'orange', 'white',10);
-      drawRectangle(ctx3,500,150,600,600,'orange', 'white',10);
-      drawLine(ctx3,200,300,300,40,'orange','orange',10);
-      drawLine(ctx3,200,550,300,40,'orange', 'white',10);
-      drawLine(ctx3,1400,420,300,40,'orange', 'white',10);
-      ctx3.clearRect(1090,155,15,590,10);
-      // ctx3.clearRect(495,305,20,30);
-      ctx3.clearRect(495,555,20,30,10);
-      ctx3.clearRect(1395,425,20,30,10);
-      drawSquare(ctx3,100,270,100,100,'orange', 'orange',10);
-      drawSquare(ctx3,100,520,100,100,'orange', 'white',10);
-      drawSquare(ctx3,1700,390,100,100,10);
-      // ctx3.clearRect(195,305,20,30);
-      ctx3.clearRect(195,555,20,30,10);
-      ctx3.clearRect(1695,425,20,30,10);
-
-      // for A=1  and B=1    CTX=4
-      drawCircle(ctx4,1100,450,300,'orange', 'orange',10);
-      drawRectangle(ctx4,500,150,600,600,'orange', 'orange',10);
-      drawLine(ctx4,200,300,300,40,'orange','orange',10);
-      drawLine(ctx4,200,550,300,40,'orange','orange',10);
-      drawLine(ctx4,1400,420,300,40,'orange','orange',10);
-      drawSquare(ctx4,100,270,100,100,'orange','orange',10);
-      drawSquare(ctx4,100,520,100,100,'orange','orange',10);
-      drawSquare(ctx4,1700,390,100,100,'orange','orange',10);
-    }
-    else if(window.matchMedia('(min-width: 1400px)').matches){
-      canvas.width = 800;
-      canvas.height = 400;
-
-      // for A=0  and B=0    CTX=1
-      drawCircle(ctx1,440,190,100,'orange', 'white',4);
-      drawRectangle(ctx1,240,90,200,200,'orange', 'white',4);
-      drawLine(ctx1,120,130,120,20,'orange',4);
-      drawLine(ctx1,120,230,120,20,'orange',4);
-      drawLine(ctx1,540,175,120,20,'orange',4);
-      ctx1.clearRect(430,92,15,196);
-      ctx1.clearRect(235,132,20,16);
-      ctx1.clearRect(235,232,20,16);
-      ctx1.clearRect(535,177,20,16);
-      drawSquare(ctx1,80,120,40,40);
-      drawSquare(ctx1,80,220,40,40);
-      drawSquare(ctx1,660,165,40,40);
-      ctx1.clearRect(115,132,20,16);
-      ctx1.clearRect(115,232,20,16);
-      ctx1.clearRect(655,177,20,16);
-      
-      // for A=0  and B=1    CTX=2
-      drawCircle(ctx2,440,190,100,'orange', 'white',4)
-      drawRectangle(ctx2,240,90,200,200,'orange', 'white',4)
-      drawLine(ctx2,120,130,120,20,'orange',4);
-      drawLine(ctx2,120,230,120,20,'orange','orange',4);
-      drawLine(ctx2,540,175,120,20,'orange','white',4);
-      ctx2.clearRect(430,92,15,196);
-      ctx2.clearRect(235,132,20,16);
-      // ctx2.clearRect(495,555,20,30);
-      ctx2.clearRect(535,177,20,16);
-      drawSquare(ctx2,80,120,40,40,'orange','white',4);
-      drawSquare(ctx2,80,220,40,40,'orange','orange',4);
-      drawSquare(ctx2,660,165,40,40,'orange','white',4);
-      ctx2.clearRect(115,132,20,16);
-      // ctx2.clearRect(195,555,20,30)
-      ctx2.clearRect(655,177,20,16);
-
-      // for A=1  and B=0    CTX=3
-      drawCircle(ctx3,440,190,100,'orange', 'white',4);
-      drawRectangle(ctx3,240,90,200,200,'orange', 'white',4);
-      drawLine(ctx3,120,130,120,20,'orange','orange',4);
-      drawLine(ctx3,120,230,120,20,'orange', 'white',4);
-      drawLine(ctx3,540,175,120,20,'orange', 'white',4);
-      ctx3.clearRect(430,92,15,196);
-      // ctx3.clearRect(495,305,20,30);
-      ctx3.clearRect(235,232,20,16);
-      ctx3.clearRect(535,177,20,16);
-      drawSquare(ctx3,80,120,40,40,'orange', 'orange',4);
-      drawSquare(ctx3,80,220,40,40,'orange', 'white',4);
-      drawSquare(ctx3,660,165,40,40,4);
-      // ctx3.clearRect(195,305,20,30);
-      ctx3.clearRect(115,232,20,16);
-      ctx3.clearRect(655,177,20,16);
-
-      // for A=1  and B=1    CTX=4
-      drawCircle(ctx4,440,190,100,'orange', 'orange',4);
-      drawRectangle(ctx4,240,90,200,200,'orange', 'orange',4);
-      drawLine(ctx4,120,130,120,20,'orange','orange',4);
-      drawLine(ctx4,120,230,120,20,'orange','orange',4);
-      drawLine(ctx4,540,175,120,20,'orange','orange',4);
-      drawSquare(ctx4,80,120,40,40,'orange','orange',4);
-      drawSquare(ctx4,80,220,40,40,'orange','orange',4);
-      drawSquare(ctx4,660,165,40,40,'orange','orange',4);
-    }
-    else if(window.matchMedia('(min-width: 900px)').matches){
+      if(window.matchMedia('(min-width: 600px)').matches){
       canvas.width = 800;
       canvas.height = 400;
 
@@ -321,8 +194,62 @@ function resizeCanvas() {
       ctx1.clearRect(50,82,20,16);
       ctx1.clearRect(245,82,10,16);
 
-      // ctx1.clearRect(92,174,11,20);
-      // ctx1.clearRect(197,174,11,20);
+      // for A=0  and B=1   CTX=2
+      drawDownSemiCircle(ctx2,150,320, 100,'orange','white',4);
+      drawRectangle(ctx2,50,180,200,150);
+      ctx2.clearRect(52,325,196,10);
+      drawLine(ctx2,90,80,20,100,'orange','white');
+      drawLine(ctx2,195,80,20,100,'orange','orange');
+      drawLine(ctx2,50,80,55,20,'orange','white');
+      drawLine(ctx2,195,80,55,20,'orange','orange');
+      drawSquare(ctx2,2,66,50,50,'orange','white');
+      drawSquare(ctx2,248,66,50,50,'orange','orange');
+      drawLine(ctx2,140,420,20,100);
+      drawSquare(ctx2,125,480,50,50,'orange','white');
+      ctx2.clearRect(92,82,16,100);
+      // ctx2.clearRect(197,82,16,100);
+      ctx2.clearRect(142,415,16,100);
+
+      ctx2.clearRect(50,82,20,16);
+      // ctx2.clearRect(245,82,10,16);
+
+      // for A=1  and B=0    CTX=3
+      drawDownSemiCircle(ctx3,150,320, 100,'orange','white',4);
+      drawRectangle(ctx3,50,180,200,150);
+      ctx3.clearRect(52,325,196,10);
+      drawLine(ctx3,90,80,20,100,'orange','orange');
+      drawLine(ctx3,195,80,20,100,'orange','white');
+      drawLine(ctx3,50,80,55,20,'orange','orange');
+      drawLine(ctx3,195,80,55,20,'orange','white');
+      drawSquare(ctx3,2,66,50,50,'orange','orange');
+      drawSquare(ctx3,248,66,50,50,'orange','white');
+      drawLine(ctx3,140,420,20,100,'orange','white');
+      drawSquare(ctx3,125,480,50,50,'orange','white');
+      // ctx3.clearRect(92,82,16,100);
+      ctx3.clearRect(197,82,16,100);
+      // ctx3.clearRect(142,415,16,100);
+
+      // ctx3.clearRect(50,82,20,16);
+      ctx3.clearRect(245,82,10,16);
+
+      // for A=1  and B=1    CTX=4
+      drawDownSemiCircle(ctx4,150,320, 100,'orange','orange',4);
+      drawRectangle(ctx4,50,180,200,150);
+      // ctx4.clearRect(52,325,196,10);
+      drawLine(ctx4,90,80,20,100);
+      drawLine(ctx4,195,80,20,100);
+      drawLine(ctx4,50,80,55,20);
+      drawLine(ctx4,195,80,55,20);
+      drawSquare(ctx4,2,66,50,50);
+      drawSquare(ctx4,248,66,50,50);
+      drawLine(ctx4,140,420,20,100);
+      drawSquare(ctx4,125,480,50,50);
+      // ctx4.clearRect(92,82,16,100);
+      // ctx4.clearRect(197,82,16,100);
+      // ctx4.clearRect(142,415,16,100);
+
+      // ctx4.clearRect(50,82,20,16);
+      // ctx4.clearRect(245,82,10,16);
     }
 
     }
