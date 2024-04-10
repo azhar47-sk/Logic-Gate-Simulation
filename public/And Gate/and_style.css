@@ -54,6 +54,7 @@ body{
     height: 35vh;
     width: 90%;
     background-color: #fff;
+    
 }
 
 .logic-description > h2 {
@@ -62,7 +63,9 @@ body{
 
 .logic-description > p {
     margin-left: 30px;
-    font-size: large;
+    font-size: x-large;
+    text-size-adjust:initial;
+    text-overflow: ellipsis;
 }
 
 /* Table */
@@ -147,6 +150,7 @@ label{
     margin-top: -130px;
     left: 86px;
     z-index: 1;
+    user-select: none;
 }
 
 .div_b {
@@ -155,6 +159,7 @@ label{
     margin-top: 80px;
     left: 70px;
     z-index: 1;
+    user-select: none;
 }
 
 .div_y{
@@ -163,6 +168,7 @@ label{
     margin-top: -30px;
     right: 80px;
     z-index: 1;
+    user-select: none;
 }
 
 .canvasDisplay{
@@ -201,6 +207,9 @@ label{
         height: 35vh;
         width: 90%;
         background-color: #fff;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
     }
 
     #myCanvas1{
@@ -272,6 +281,8 @@ label{
         height: 35vh;
         width: 90%;
         background-color: #fff;
+        overflow-x: hidden;
+        overflow-y: hidden;
      }
     #myCanvas1{
         width: 600px;
