@@ -90,15 +90,6 @@ td{
     justify-content: center;
     align-items: center;
 }
-.area{
-    height: 80%;
-    width: 70%;
-    /* background-color: dodgerblue; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 2px solid black;
-}
 
 #myCanvas1{
     position: relative;
@@ -192,11 +183,10 @@ label{
     }
 
     .logic-diagram{
-        height: 90%;
+        height: 50vh;
         width: 90%;
         background-color: #fff;
         border: 1px solid black;
-        justify-content:start;
     }
     
     .logic-table{
@@ -214,24 +204,47 @@ label{
     }
 
     #myCanvas1{
-        width: 300px;
-        height: 600px;
+        width: 200px;
+        height: 400px;
     }
     #myCanvas2{
-        width: 300px;
-        height: 600px;
+        width: 250px;
+        height: 500px;
     }
     #myCanvas3{
-        width: 300px;
-        height: 600px;
+        width: 250px;
+        height: 500px;
     }
     #myCanvas4{
-        width: 300px;
-        height: 600px;
+        width: 250px;
+        height: 500px;
     }
+    .div_a {
+        position: relative;
+        font-size: x-large;
+        margin-top: -280px;
+        left: 44px;
+        z-index: 1;
+    }
+    
+    .div_b {
+        position: relative;
+        font-size: x-large;
+        margin-top: -280px;
+        left: 190px;
+        z-index: 1;
+    }
+    
+    .div_y{
+        position: relative;
+        font-size: x-large;
+        margin-top: 272px;
+        right: 107px;
+        z-index: 1;
+    }
+    
 
 }
-
 @media (min-width:600px){
     .home-btn {
         height: 6vh;
@@ -259,7 +272,7 @@ label{
         height: 35vh;
         width: 90%;
         background-color: #fff;
-    }
+     }
     #myCanvas1{
         width: 800px;
         height: 400px;
@@ -276,6 +289,30 @@ label{
         width: 800px;
         height: 400px;
     }
+    .div_a {
+        position: relative;
+        font-size: x-large;
+        margin-top: -130px;
+        left: 86px;
+        z-index: 1;
+    }
+    
+    .div_b {
+        position: relative;
+        font-size: x-large;
+        margin-top: 80px;
+        left: 70px;
+        z-index: 1;
+    }
+    
+    .div_y{
+        position: relative;
+        font-size: x-large;
+        margin-top: -30px;
+        right: 80px;
+        z-index: 1;
+    }
+    
 }
 
 @media (min-width:900px){
@@ -305,6 +342,22 @@ label{
         height: 35vh;
         width: 60%;
         background-color: #fff;
+    }
+    #myCanvas1{
+        width: 800px;
+        height: 400px;
+    }
+    #myCanvas2{
+        width: 800px;
+        height: 400px;
+    }
+    #myCanvas3{
+        width: 800px;
+        height: 400px;
+    }
+    #myCanvas4{
+        width: 800px;
+        height: 400px;
     }
 }
 
@@ -337,3 +390,4 @@ label{
         background-color: #fff;
     }
 }
+

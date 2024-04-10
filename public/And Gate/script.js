@@ -313,10 +313,10 @@ function resizeCanvas() {
       drawSquare(ctx1,2,66,50,50);
       drawSquare(ctx1,248,66,50,50);
       drawLine(ctx1,140,420,20,100);
-      drawSquare(ctx1,125,520,50,50);
+      drawSquare(ctx1,125,480,50,50);
       ctx1.clearRect(92,82,16,100);
       ctx1.clearRect(197,82,16,100);
-      ctx1.clearRect(142,415,16,130);
+      ctx1.clearRect(142,415,16,100);
 
       ctx1.clearRect(50,82,20,16);
       ctx1.clearRect(245,82,10,16);
